@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- 
+            The values of the color matrix defines the color transformation what will be applied.
+            Here we just setup the elements and define an identity matrix. We'll modify the matrix via Javascript code
+            to define an actual color transformation.
+        -->
+        <svg style="width:0; height:0; margin:0; padding:0; border:none;">
+            <filter id="colorTransformFilter">
+                <feColorMatrix in="SourceGraphic" type="matrix"
+                    values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 1 0" />
+            </filter>
+        </svg>
+
+        <!--
+            Element with an SVG icon that we want to colorize
+            Note: that the color transformation is applied to everything not only to the background, but everything
+            within the element as well.
+
+            Typical solution to to isolate background stuff to it's own div and use another div for contents :(
+                
+            Support for CSS backdrop-filter can't come soon enough.
+        -->
+        <div id="logo-colored" 
+            style="
+                width:300px; 
+                height:300px; 
+                background-color: transparent;
+                background-image: url(logo.svg);
+                background-position: center center;
+                background-repeat: no-repeat; 
+                background-size: cover; 
+                filter:url(#colorTransformFilter);">
+
+                <p style="color:#fff">Testing 1 2 3...</p>
+        </div>
+
+        <script type="text/javascript">
+
+            /**
+            * A little helper function to update the color transformation matrix
+            *           
+            * @param {Number} _r
+            * @param {Number} _g
+            * @param {Number} _b
+            */
+            const setPrimaryColor = function(_r, _g, _b) {
+
+                const rScaled = _r / 255.0;
+                const gScaled = _g / 255.0;
+                const bScaled = _b / 255.0;
+
+                const feColorMatrixElem = document.getElementById('colorTransformFilter').getElementsByTagName('feColorMatrix')[0];
+                feColorMatrixElem.setAttribute(
+                    `values`,
+                    `${rScaled} 0 0 0 0
+                     0 ${gScaled} 0 0 0
+                     0 0 ${bScaled} 0 0
+                     0 0 0 1 0`
+                );
+            };
+
+            // Set/update color transformation matrix
+            setPrimaryColor(68, 140, 203);
+        </script>
+
+    </body>
+</html>
