@@ -13,6 +13,7 @@
                             0 1 0 0 0
                             0 0 1 0 0
                             0 0 0 1 0" />
+                        
             </filter>
         </svg>
 
@@ -57,9 +58,9 @@
                 const feColorMatrixElem = document.getElementById('colorTransformFilter').getElementsByTagName('feColorMatrix')[0];
                 feColorMatrixElem.setAttribute(
                     `values`,
-                    `${rScaled} 0 0 0 0
-                     0 ${gScaled} 0 0 0
-                     0 0 ${bScaled} 0 0
+                    `0 0 0 0 ${rScaled}
+                     0 0 0 0 ${gScaled}
+                     0 0 0 0 ${bScaled}
                      0 0 0 1 0`
                 );
             };
