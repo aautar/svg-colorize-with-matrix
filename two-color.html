@@ -9,27 +9,27 @@
         <svg style="width:0; height:0; margin:0; padding:0; border:none;">
             <filter id="colorTransformFilter">
 
-                <feColorMatrix in="SourceGraphic" type="matrix" result="srcInvert"
-                    values="-1 0 0 0 1
-                            0 -1 0 0 1
+                <feColorMatrix in="SourceGraphic" type="matrix" result="addColor1"
+                    values="-1 0 0 0 1.5
+                            0 -1 0 0 1.5
                             0 0 -1 0 1
-                            0 0 0 1 0" />
-
-                <feColorMatrix in="srcInvert" type="matrix" result="addColor1" 
-                    values="1 0 0 0 0.5
-                            0 1 0 0 0.5
-                            0 0 1 0 0
-                            0 0 0 1 0" /> 
+                            0 0 0 0 1" />
                                     
                 <feColorMatrix in="SourceGraphic" type="matrix" result="addColor2"
-                    values="1 0 0 0 0.5
+                    values="1 0 0 0 0.50196078431372549019607843137255
                             0 1 0 0 0
                             0 0 1 0 0
-                            0 0 0 1 0" />                            
-                
+                            0 0 0 0 1" />                
                         
-                <feBlend in="addColor1" in2="addColor2" mode="multiply" />        
-                
+                <feBlend in="addColor1" in2="addColor2" mode="multiply" result="outFullAlpha" />        
+
+                <feColorMatrix in="SourceGraphic" type="matrix" result="whiteAlpha"
+                    values="0 0 0 0 1
+                            0 0 0 0 1
+                            0 0 0 0 1
+                            0 0 0 1 0" />     
+
+                <feComposite in="whiteAlpha" in2="outFullAlpha" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
 
             </filter>
         </svg>
