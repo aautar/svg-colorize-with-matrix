@@ -11,14 +11,15 @@
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
         background-size:cover;
-        height: 100vh
+        height: 100vh;
+        overflow: hidden
             ">
         <!-- 
             The values of the color matrix defines the color transformation what will be applied.
             Here we just setup the elements and define an identity matrix. We'll modify the matrix via Javascript code
             to define an actual color transformation.
         -->
-        <svg style="width:0; height:0; margin:0; padding:0; border:none;">
+        <svg style="width:0; height:0; margin:0; padding:0; border:none; position:fixed;">
             <filter color-interpolation-filters="sRGB" id="colorTransformFilter">
 
                 <feColorMatrix id="inColorA" in="SourceGraphic" type="matrix" result="imageA"
@@ -54,29 +55,31 @@
 
 
 
-        <p style="font-family:'Roboto', sans-serif; text-align:center; color:#fff; margin:0; padding:0;">Dynamic Re-coloring</p>
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%;">
 
-        <!--
-            Element with an SVG icon that we want to colorize
-            Note: that the color transformation is applied to everything not only to the background, but everything
-            within the element as well.
+            <p style="font-family:'Roboto', sans-serif; font-size:32px; text-align:center; color:#fff; margin:0; padding:0;">Dynamic Re-coloring</p>
 
-            Typical solution to to isolate background stuff to it's own div and use another div for contents :(
-                
-        -->
-        <div id="logo-colored" 
-            style="
-                width:200px; 
-                height:140px; 
-                margin: 0 auto;
-                background-color: transparent;
-                background-image: url(logo-2-color.svg);
-                background-position: center center;
-                background-repeat: no-repeat; 
-                background-size: cover; 
-                filter:url(#colorTransformFilter);">
+            <!--
+                Element with an SVG icon that we want to colorize
+                Note: that the color transformation is applied to everything not only to the background, but everything
+                within the element as well.
+
+                Typical solution to to isolate background stuff to it's own div and use another div for contents :(
+                    
+            -->
+            <div id="logo-colored" 
+                style="
+                    width:600px; 
+                    height:420px; 
+                    margin: 0 auto;
+                    background-color: transparent;
+                    background-image: url(logo-2-color.svg);
+                    background-position: center center;
+                    background-repeat: no-repeat; 
+                    background-size: cover; 
+                    filter:url(#colorTransformFilter);">
+            </div>
         </div>
-
 
         <script type="text/javascript">
         
