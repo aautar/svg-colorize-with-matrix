@@ -1,1 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><defs><style>.cls-1{fill:#000;fill-rule:evenodd} .cls-2{fill:#fff;fill-rule:evenodd}</style></defs><path class="cls-1" d="M156.237 72.685l19.825 11.875 23.052 1.64-30.443 21.819z"/><path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-1" d="M218.73 178.364L197.961 188.5l-13.948 18.426-1.676-37.417z"/><path id="Shape_2_copy_2" data-name="Shape 2 copy 2" class="cls-1" d="M104.394 184.115l-1.457-23.064-11.719-19.917 35.233 12.709z"/><path class="cls-2" d="M158.5 120a22.5 22.5 0 1 1-22.5 22.5 22.5 22.5 0 0 1 22.5-22.5zm4.5 19a11 11 0 1 1-11 11 11 11 0 0 1 11-11z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300"
+   height="300"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="logo-2-color.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1586"
+     inkscape:window-height="809"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="0.78666667"
+     inkscape:cx="150"
+     inkscape:cy="150"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg12" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#000;fill-rule:evenodd} .cls-2{fill:#fff;fill-rule:evenodd}</style>
+  </defs>
+  <g
+     id="g4497"
+     transform="translate(-4.974,10.1945)">
+    <path
+       id="path6"
+       d="m 156.237,72.685 19.825,11.875 23.052,1.64 -30.443,21.819 z"
+       class="cls-1"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-rule:evenodd" />
+    <path
+       d="m 218.73,178.364 -20.769,10.136 -13.948,18.426 -1.676,-37.417 z"
+       class="cls-1"
+       data-name="Shape 2 copy"
+       id="Shape_2_copy"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-rule:evenodd" />
+    <path
+       d="m 104.394,184.115 -1.457,-23.064 -11.719,-19.917 35.233,12.709 z"
+       class="cls-1"
+       data-name="Shape 2 copy 2"
+       id="Shape_2_copy_2"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-rule:evenodd" />
+    <path
+       id="path10"
+       d="M 158.5,120 A 22.5,22.5 0 1 1 136,142.5 22.5,22.5 0 0 1 158.5,120 Z m 4.5,19 a 11,11 0 1 1 -11,11 11,11 0 0 1 11,-11 z"
+       class="cls-2"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;fill-rule:evenodd" />
+  </g>
+</svg>
